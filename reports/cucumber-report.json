@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;valid-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Valid Login",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 623280100
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2141630099
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User opens login page",
+            "match": {
+              "location": "step_definitions\\loginSteps.js:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 82934600
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters username and password",
+            "match": {
+              "location": "step_definitions\\loginSteps.js:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1835624399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "step_definitions\\loginSteps.js:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 122097900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User should be logged in successfully",
+            "match": {
+              "location": "step_definitions\\loginSteps.js:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 367663000
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
