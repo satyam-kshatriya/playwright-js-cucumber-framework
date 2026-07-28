@@ -7,18 +7,21 @@ let page;
 
 async function launchBrowser() {
   browser = await chromium.launch({
-    headless: false,
+    // Local = Browser visible
+    // GitHub Actions (CI=true) = Headless
+    headless: process.env.CI === "true",
   });
 
   context = await browser.newContext();
-
   page = await context.newPage();
 
   return page;
 }
 
 async function closeBrowser() {
-  await browser.close();
+  if (browser) {
+    await browser.close();
+  }
 }
 
 module.exports = {

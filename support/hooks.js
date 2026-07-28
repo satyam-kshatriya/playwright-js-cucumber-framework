@@ -9,7 +9,7 @@ Before(async function () {
 });
 
 After(async function (scenario) {
-  if (scenario.result.status === "FAILED") {
+  if (scenario.result.status === "FAILED" && this.page) {
     await this.page.screenshot({
       path: `reports/screenshots/${scenario.pickle.name}.png`,
       fullPage: true,
