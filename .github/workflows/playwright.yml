@@ -26,6 +26,10 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Cucumber Tests
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: npm test
 
       - name: Upload Cucumber Report
