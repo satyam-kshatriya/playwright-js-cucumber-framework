@@ -6,3 +6,17 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+
+# Environment
+.env
+
+# Reports
+reports/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
