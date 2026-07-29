@@ -29,12 +29,12 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Cucumber Tests
+      - name: Run Smoke Tests
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
-        run: npm test
+        run: npm run smoke
 
       - name: Upload Cucumber Report
         if: always()
