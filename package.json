@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js && node report.js"
+    "test": "cucumber-js && node report.js",
+    "smoke": "cucumber-js --tags @smoke && node report.js",
+    "regression": "cucumber-js --tags @regression && node report.js",
+    "all": "cucumber-js && node report.js"
   },
   "keywords": [],
   "author": "",
