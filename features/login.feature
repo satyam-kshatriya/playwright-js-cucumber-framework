@@ -1,7 +1,7 @@
 Feature: Login
 
 @login
-@regression
+@smoke
 Scenario Outline: Login with different credentials
 
 Given User opens login page
