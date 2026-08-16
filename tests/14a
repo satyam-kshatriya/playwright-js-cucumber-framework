@@ -1,0 +1,13 @@
+//Question 6 — Palindrome
+
+let str1 = "aba";
+let str2 = "";
+
+for (let i = str1.length - 1; i >= 0; i--) {
+  str2 = str2 + str1[i];
+}
+if (str1 === str2) {
+  console.log("palindrome");
+} else {
+  console.log("not palindrome");
+}
