@@ -30,6 +30,8 @@ export default defineConfig({
     trace: "on",
   },
 
+  // GitHub Actions CI/CD practice
+
   /* Configure projects for major browsers */
   projects: [
     {
