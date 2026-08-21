@@ -1,4 +1,4 @@
-name: Playwright + Cucumber Fetch CI Practice
+name: Playwright + Cucumber CI Pull Practice
 
 on:
   push:
