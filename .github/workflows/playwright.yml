@@ -1,4 +1,4 @@
-name: Playwright + Cucumber CI
+name: name: Playwright + Cucumber CI Practice
 
 on:
   push:
