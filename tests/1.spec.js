@@ -1,11 +1,8 @@
-// Find Longest Word in a Sentence
-let sentense = "my name is satyam kshatriya";
-let arr = sentense.split(" ");
-console.log(arr);
-let longest = "";
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i].length > longest.length) {
-    longest = arr[i];
-  }
+//reverse alternate words in string
+
+let str = "Hello World This Is A Test";
+let words = str.split(" ");
+for (let i = 0; i < words.length; i += 2) {
+  words[i] = words[i].split("").reverse().join("");
 }
-console.log(longest);
+console.log(words.join(" "));
